@@ -32,7 +32,7 @@
             <div class="goal-item">
                 <h3>Tháng {{ month }}: {{ goal }}</h3>
                 <!-- Form gửi mục tiêu -->
-                <form method="GỬI " action="/send-goal">
+                <form method="POST" action="/send-goal">
                     <input type="hidden" name="month" value="{{ month }}">
                     <input type="hidden" name="goal" value="{{ goal }}">
                     <button type="submit">Gửi mục tiêu</button>
