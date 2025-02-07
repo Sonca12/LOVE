@@ -39,4 +39,26 @@ function checkQuiz() {
         document.getElementById("quiz-result").innerText = "Cần thêm chút lãng mạn đấy! 😄";
     }
 }
+function calculateResult() {
+    let activity = document.querySelector('input[name="activity"]:checked');
+    let food = document.querySelector('input[name="food"]:checked');
+    let result = "Cặp đôi hoàn hảo! 💖";
+
+    if (activity.value == 1 && food.value == 1) {
+        result = "Bạn thích đi dạo và ăn sushi, thật lãng mạn! 🍣";
+    } else {
+        result = "Cả hai đều có những sở thích tuyệt vời! 😘";
+    }
+
+    document.getElementById("quiz-result").innerText = result;
+}
+// Thêm hiệu ứng khi cuộn trang
+window.addEventListener("scroll", () => {
+    let elements = document.querySelectorAll(".animate-on-scroll");
+    elements.forEach(element => {
+        if (element.getBoundingClientRect().top < window.innerHeight) {
+            element.classList.add("fade-in");
+        }
+    });
+});
  

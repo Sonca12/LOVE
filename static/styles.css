@@ -57,4 +57,31 @@ body {
 .timeline-item h3 {
     color: #e74c3c;
 }
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.animate-on-scroll.fade-in {
+    opacity: 1;
+}
+#love-story {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.story img {
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
  
