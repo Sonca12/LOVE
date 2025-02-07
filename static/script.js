@@ -26,4 +26,17 @@ function getRandomChallenge() {
     let randomIndex = Math.floor(Math.random() * challenges.length);
     document.getElementById("challenge-result").innerText = challenges[randomIndex];
 }
+setInterval(function() {
+    document.body.classList.toggle("love-blink");
+}, 1000);
+function checkQuiz() {
+    let answer1 = document.getElementById("answer1").value.toLowerCase();
+    let answer2 = document.getElementById("answer2").value;
+
+    if (answer1.includes("lãng mạn") && answer2 === "ca_hai") {
+        document.getElementById("quiz-result").innerText = "Các bạn là cặp đôi tuyệt vời! 💕";
+    } else {
+        document.getElementById("quiz-result").innerText = "Cần thêm chút lãng mạn đấy! 😄";
+    }
+}
  

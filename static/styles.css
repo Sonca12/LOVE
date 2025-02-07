@@ -27,4 +27,34 @@ button {
     color: white;
     cursor: pointer;
 }
+body {
+    background: url('/static/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif; /* Thêm font đẹp */
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.love-blink {
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.6), rgba(255, 0, 0, 0.2));
+}
+.timeline {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.timeline-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item h3 {
+    color: #e74c3c;
+}
  

@@ -50,4 +50,31 @@
 <h2>Thử thách ngẫu nhiên 🎯</h2>
 <button onclick="getRandomChallenge()">Nhận thử thách</button>
 <p id="challenge-result"></p>
+<h2>Dòng Thời Gian Tình Yêu</h2>
+<div class="timeline">
+    <div class="timeline-item">
+        <h3>Lần đầu gặp nhau 💕</h3>
+        <p>Chúng ta gặp nhau tại một quán cà phê, nơi mọi thứ bắt đầu...</p>
+    </div>
+    <div class="timeline-item">
+        <h3>Lời tỏ tình đầu tiên 💌</h3>
+        <p>Ngày ấy, tôi đã nói ra những lời yêu thương đầu tiên...</p>
+    </div>
+    <!-- Thêm các mốc thời gian khác -->
+</div>
+<h2>Trắc Nghiệm Tình Yêu 💖</h2>
+<form id="quiz-form">
+    <p>1. Bạn thích gì nhất ở người yêu của mình?</p>
+    <input type="text" id="answer1" placeholder="Câu trả lời...">
+    
+    <p>2. Ai là người đưa ra quyết định khi đi du lịch?</p>
+    <select id="answer2">
+        <option value="toi">Tôi</option>
+        <option value="duong">Dương</option>
+        <option value="ca_hai">Cả hai</option>
+    </select>
+
+    <button type="button" onclick="checkQuiz()">Kiểm tra</button>
+</form>
+<p id="quiz-result"></p>
  
