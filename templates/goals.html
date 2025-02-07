@@ -17,3 +17,28 @@
     </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mục tiêu 12 tháng</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Mục tiêu 12 tháng của chúng mình 💖</h1>
+    <div id="goals-list">
+        {% for month, goal in goals.items() %}
+            <div class="goal-item">
+                <h3>Tháng {{ month }}: {{ goal }}</h3>
+                <!-- Form gửi mục tiêu -->
+                <form method="GỬI " action="/send-goal">
+                    <input type="hidden" name="month" value="{{ month }}">
+                    <input type="hidden" name="goal" value="{{ goal }}">
+                    <button type="submit">Gửi mục tiêu</button>
+                </form>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
