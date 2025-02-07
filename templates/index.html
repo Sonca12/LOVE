@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyện Tình Yêu 💕</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Chuyện Tình Của Tôi & Dương 💖</h1>
+    <p>"Em chính là định mệnh của anh, mãi bên nhau nhé!"</p>
+
+    <h2>Dòng Thời Gian</h2>
+    <ul>
+        <li>2023: Lời tỏ tình đầu tiên 💌</li>
+        <li>2024: Kỷ niệm tuyệt vời nhất 💍</li>
+    </ul>
+
+    <h2>Gửi Tin Nhắn 💌</h2>
+    <form method="POST">
+        <input type="text" name="message" placeholder="Nhập lời yêu thương..." required>
+        <button type="submit">Gửi</button>
+    </form>
+
+    <h3>Tin nhắn từ người dùng:</h3>
+    <ul>
+        {% for msg in messages %}
+            <li>{{ msg }}</li>
+        {% endfor %}
+    </ul>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+ 
