@@ -6,11 +6,11 @@ goals = {
     4: "Đón sinh nhật cùng em và cả 2 có bằng lái  ",
     5: "Đón tròn 1 năm yêu nhau ở phan thiết",
     6: "Đi cắm trại cùng nhau hpan cùng nhau",
-    7: "Làm một điều bất ngờ cho người yêu",
-    8: "Lên kế hoạch cho sinh nhật",
-    9: "Tổ chức buổi hẹn hò đặc biệt",
-    10: "Tham gia một lớp học cùng nhau",
-    11: "Dọn dẹp và trang trí lại phòng",
+    7: "vẽ tranh cùng nhau",
+    8: "ráp logo cùng nhau",
+    9: "Tặng trang sức cùng nhau",
+    10: "Đi du lịch cùng nhau",
+    11: "Làm album ảnh cùng nhau",
     12: "Tổng kết năm và viết lời chúc cho năm mới",
 }
 

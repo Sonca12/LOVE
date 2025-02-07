@@ -59,15 +59,15 @@ app.secret_key = "tung2004"  # Thêm khóa bí mật để sử dụng flash mes
 
 # Danh sách mục tiêu
 goals = {
-    3: "Đón sinh nhật cùng anh",
-    4: "Đón sinh nhật cùng em và cả 2 có bằng lái",
-    5: "Đón tròn 1 năm yêu nhau ở Phan Thiết",
-    6: "Đi cắm trại cùng nhau, hạnh phúc bên nhau",
-    7: "Làm một điều bất ngờ cho người yêu",
-    8: "Lên kế hoạch cho sinh nhật",
-    9: "Tổ chức buổi hẹn hò đặc biệt",
-    10: "Tham gia một lớp học cùng nhau",
-    11: "Dọn dẹp và trang trí lại phòng",
+    3: "Đón sinh nhật cùng anh ",
+    4: "Đón sinh nhật cùng em và cả 2 có bằng lái  ",
+    5: "Đón tròn 1 năm yêu nhau ở phan thiết",
+    6: "Đi cắm trại cùng nhau hpan cùng nhau",
+    7: "vẽ tranh cùng nhau",
+    8: "ráp logo cùng nhau",
+    9: "Tặng trang sức cùng nhau",
+    10: "Đi du lịch cùng nhau",
+    11: "Làm album ảnh cùng nhau",
     12: "Tổng kết năm và viết lời chúc cho năm mới",
 }
 
@@ -112,8 +112,8 @@ def send_goal():
     # Gửi email tới bạn và người yêu
     subject = f"Mục tiêu tháng {month}"
     message = f"Chào em,\n\nMục tiêu tháng {month} của chúng mình  là: {goal}\n\nChúc we hoàn thành xuất sắc mục tiêu này!"
-    send_email(subject, message, "your_email@gmail.com")  # Thay email của bạn
-    send_email(subject, message, "friend_email@gmail.com")  # Thay email của người yêu
+    send_email(subject, message, "bachquangtung162@gmail.com")  # Thay email của bạn
+    send_email(subject, message, "nguyenlethuyduong99@gmail.com")  # Thay email của người yêu
 
     # Hiển thị thông báo
     flash(f"Mục tiêu tháng {month} đã được gửi thành công!")
