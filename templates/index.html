@@ -32,4 +32,22 @@
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
+<h2>Trắc nghiệm tình yêu 💞</h2>
+<form id="quiz-form">
+    <p>1. Kỷ niệm đáng nhớ nhất của hai đứa là gì?</p>
+    <input type="text" id="answer1" placeholder="Nhập câu trả lời...">
+    
+    <p>2. Ai là người nói lời yêu trước?</p>
+    <select id="answer2">
+        <option value="toi">Tôi</option>
+        <option value="duong">Dương</option>
+        <option value="ca_hai">Cả hai</option>
+    </select>
+    
+    <button type="button" onclick="checkQuiz()">Kiểm tra</button>
+</form>
+<p id="quiz-result"></p>
+<h2>Thử thách ngẫu nhiên 🎯</h2>
+<button onclick="getRandomChallenge()">Nhận thử thách</button>
+<p id="challenge-result"></p>
  

@@ -13,7 +13,11 @@ def home():
             messages.append(msg)
     return render_template("index.html", messages=messages)
 
+import os
+
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)  # Chạy trên cổng 5000
+    port = int(os.environ.get("PORT", 5000))  # Dùng cổng Render cấp hoặc mặc định là 5000
+    app.run(host="0.0.0.0", port=port)
+
 
  
